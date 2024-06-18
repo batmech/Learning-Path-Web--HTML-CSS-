@@ -1,0 +1,72 @@
+.main{
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.862);
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+}
+
+.first{
+    left: 0px;
+    background-color: deepskyblue;
+    animation: mov 20s infinite forwards ease-in-out;
+}
+
+.sec{
+    left: 120px;
+    background-color: rgb(226, 137, 43);
+    animation: mov 17.5s infinite forwards ease-in-out;
+}
+
+.third{
+    left: 240px;
+    background-color: brown;
+    animation: mov 15s infinite forwards ease-in-out;
+}
+
+.fourth{
+    left: 360px;
+    background-color: chartreuse;
+    animation: mov 12.5s infinite forwards ease-in-out;
+}
+
+.fifth{
+    left: 480px;
+    background-color: blueviolet;
+    animation: mov 10s infinite forwards ease-in-out;
+}
+
+@keyframes mov{
+    0% {
+        top: 0; 
+        left: 0;
+        transform: rotate(90deg);
+    }
+    25% {
+        top: 0;
+        left: calc(100vw - 100px);
+        transform: rotate(180deg);
+        border-radius: 50%;
+    }
+    50% {
+        top: calc(100vh - 100px);
+        left : calc(100vw - 100px);
+        transform: rotate(270deg);
+        border-radius: 0%;
+    }
+    75% {
+        top: calc(100vh - 100px);
+        left: 0;
+        transform: rotate(360deg);
+        border-radius: 50%;
+    }
+    100% {
+        top: 0;
+        left: 0;
+        transform: rotate(450deg);
+    }
+}
