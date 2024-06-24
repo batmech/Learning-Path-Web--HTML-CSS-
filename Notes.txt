@@ -1,0 +1,151 @@
+Notes
+
+HTML:
+
+&nbsp; ==> space character
+<em> ==> Italic
+<u> ==> underline
+<hr> ==> horizontal line
+<ol> ==> Attribute ==> type: "A", "a", "1", "I", "i"
+<ul> ==> Attribute ==> type: "circle", "disc", "square"
+**<div> (don't specify height, width should be relative ie, %)
+<span> ==> inline container
+<a href = "" target= "_blank"> ==> hyper-text reference (_blank => new tab)
+<input type="" size= "" placeholder= "any-text" name= "groupname"> (type= text/number/password/checkbox/radio)
+<textarea cols="width-kinda" rows="height-kinda"> ==> for multi-line text input
+<label> ==> used with input tag/textarea/select tags etc. Increases hit area more than checkbox.
+<select> 
+	<option> Element </option>
+</select>
+
+
+CSS:
+
+(Use Google Fonts)
+
+em ==> relative to parent tag (1em = same as parent font size)
+text-decoration
+font-weight (how thick and thin characters should be)
+font-family (for body -> 'Josefin Sans')
+background-repeat
+background-size (Attributes - contain, cover)
+background-attachment - (Attributes - scroll, fixed)
+width: calc(100% - 20px) ==> compute maths calculations, 50vw (View Width based on parent tag)
+padding - gives space between content and container (top, right, bottom, left)
+margin: gives space between different containers (top, right, bottom, left) ***(margin: 10px auto 30px auto)
+text-align
+border-radius
+text-shadow: x-axis y-axis shadow-strength color (text-shadow: 10px 20px 20px #f00)
+border: thickness style color (10px solid/dotted/dashed/double #f00)
+
+box-sizing: border-box (fixes the width, doesn't let box width to increase when padding/border is increased)
+
+opacity: (maintains the same space even tho can't be seen)
+visibility: (Attributes: hidden)
+
+display: (Attributes: none,inline-block 1.can't see&won't take up space 2.acts as inline and block properties)
+	 (Attribute: flex) //Self adjustable, finds space
+
+word-wrap: (Attributes: break-word) //breaks to next line
+white-space: (Attribute: nowrap) //even if space present doesn't break into next line)
+cursor: (Attributes: pointer wait etc)
+pointer-events: (Attributes: none auto) //Set whether element should react to pointer events (hover/click etc)
+resize: (Attributes: vertical horizontal none) //Used for textarea tag
+
+float: (Attribute: left) //specifies what should happen with the element that is next to a floating element.
+// Very important to clear when dealing with divs as parent will shrink
+// Can use pseudo class for this purpose or another div
+
+// Or in parent class use
+overflow: (Attribute: hidden scroll auto)
+// Problem: Content will be hidden when it's overflowed
+
+
+flex-wrap: (Attribute: wrap)
+flex-direction: (Attributes: row row-reverse column column-reverse)
+justify-content: (Attributes: space-around center)
+position: (Attribute: absolute static relative fixed sticky) // placing div as layers on one another (**doc becomes parent) //by default static // differ from absolute, the outer tag becomes parent
+z-index: // used after position attribute to number the layers (larger the value, on top it comes)
+
+transform: (Attribute: rotate(degs) scale() skew(deg) translate(x, y))//Scale and rotate doesn't change initial given size taken up
+
+
+transition: width time height time //Give animate properties // Used with CSS selectors like hover etc
+
+animation: name time // Need both to perform some kind of animation // absolute position required for this
+@keyframes name{
+	0% {top: 0; left: 0;}
+	100% {top: 0; left: auto; right: 0}
+}
+
+CSS-Selectors:
+
+:first-child
+:last-child
+:nth-child(2)
+:not(prop-class) // Specify class
+:focus //changes on clicking ie, focused
+:hover
+
+
+ID:
+
+To uniquely identify tags for style purpose (CSS Selector)
+ID can't be repeated
+<h1 id = "idname"> Element </h1>
+
+To call in CSS: #idname
+
+
+Class:
+
+It can be repeated. (Repeat CSS properties)
+
+<h1 class= "class1 class2"> Element </h1>
+
+To call in CSS: .classname 
+
+Combine class properties in CSS: .class1.class2.class3
+Combine class and tag in CSS: tag.class1
+
+
+Inline Tags/Views: Wraps how much content present (eg: strong, em, u etc)
+Fluid Tags/Views: Wraps entire container (eg: h1, div etc)
+
+
+Pseudo Classes:
+
+::before //These are incline blocks, make them block by display: block (CSS)
+::after //These are incline blocks, make them block by display: block (CSS)
+input::placeholder
+
+
+Accessing attributes in a tag in CSS:
+
+Eg: input[type=password]
+
+
+Menu, ie, drop-boxes are usually done as unordered list
+Unordered/Ordered list have padding and margin as default (sometimes have to remove them)
+
+
+@media only screen and (max-width: -px) and (min-width: -px){
+
+} //
+
+
+body: //default properties
+font-weight: 
+font-family
+margin: 0
+line-height: normal
+padding: 0
+background-color: 
+
+
+headers tags: //default properties
+font-family
+font-weight
+margin
+padding
+margin-bottom

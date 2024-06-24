@@ -1,0 +1,83 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open Sans", sans-serif;
+    line-height: normal;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #101010;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    font-family: OpenSans, sans-serif;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+h1{font-size: 50px;}
+h2{font-size: 450x;}
+h3{font-size: 40px;}
+
+p, ul, ol{ 
+    margin:0px;
+    line-height:28px; 
+    padding:0px; 
+    margin-bottom: 23px;
+}
+
+ol,ul { 
+    padding-left: 25px;
+}
+
+.header{
+    padding: 20px 0px 20px 0px;
+}
+
+.container{
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+}
+
+.header .logo{
+    width: 220px;
+}
+
+.main-nav{
+    width: calc(100% - 220px);
+}
+
+.header .main-nav .list-content{
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+    gap: 40px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header .main-nav .list-content a{
+    text-decoration: none;
+    color: #101010;
+    font-size: 12px;
+}
+.banner-image img{ 
+    width: 100%;
+}
+
+.bottom-content{
+    margin-top: 40px;
+}
+
+.bottom-content .content .header-tag{font-family: "Oswald", sans-serif; margin-left: 25px;}
+
+.container .content{
+    margin-bottom: 30px;
+}
