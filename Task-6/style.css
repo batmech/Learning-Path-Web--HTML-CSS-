@@ -1,15 +1,39 @@
+/* My default settings */
 *{box-sizing: border-box;}
 body{
     margin: 0px;
     padding: 0px;
     line-height: normal;
     font-size: 12px;
+    font-family: "Poppins";
 }
 p,ul,ol{margin: 0px; padding: 0px;}
 img{max-width: 100%;}
 h1,h2,h3,h4,h5,h6{margin: 0px; padding: 0px; font-weight: bold;}
+h1{font-size: 36px;}
+h2{font-size: 30px;}
+h3{font-size: 24px;}
+h4{font-size: 18px;}
+h5{font-size: 12px;}
+h6{font-size: 6px;}
 
-/* Calender Icon */
+/* Default Settings */
+a { text-decoration:none; }
+.hidden { display:none;}
+.italic{font-style:italic;	}
+.bold{font-weight:bold;	}
+table{border-spacing:0px;border-collapse:collapse;}
+input[type="text"],input[type="url"],input[type="tel"], input[type="email"], input[type="password"], select, textarea { font-family: "Roboto", sans-serif;background:#fff; border:0px solid #e0e0e0;color: #000; font-size: 14px; padding: 12px 15px; resize: vertical;width:100%;font-weight:400;box-sizing:border-box;font-family: "Poppins", sans-serif;border-radius: 4px; }
+textarea { width:100%;}
+input[type="text"]:focus, input[type="password"]:focus, select:focus, textarea:focus { outline: 0; box-shadow: 0px 0px 10px rgba(000,000,000,.1); }
+input[type="button"], input[type="submit"], input[type="reset"], .primary-button, .btn {font-family: "Roboto", sans-serif; background: #FFCC19 none repeat scroll 0 0;border:0px;color: #151515;display: inline-block; font-size:20px; font-weight: 600;min-width:120px; padding: 11px 15px;  vertical-align: top;transition: all linear .2s;-moz-transition: all linear .2s;-ms-transition: all linear .2s;-o-transition: all linear .2s;-webkit-transition: all linear .2s; border-radius: 4px;}
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover ,.primary-button:hover,.btn:hover,.primary-button:focus,.btn:focus{ background-color:#000000;color:#fff;}
+.form-control { border-radius:0px; -moz-border-radius:0px;  -ms-border-radius:0px; -o-border-radius:0px; -webkit-border-radius:0px; box-shadow: 0 0 0; height: auto;}
+a:focus{outline:none;	text-decoration:none;}
+a{color:#000;transition: all linear .2s;-moz-transition: all linear .2s;-ms-transition: all linear .2s;-o-transition: all linear .2s;-webkit-transition: all linear .2s;	}
+a:hover,a:focus{text-decoration:none;color:#000;}
+
+/* Calender Icon, Arrows (Left and Right) */
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -17,9 +41,8 @@ h1,h2,h3,h4,h5,h6{margin: 0px; padding: 0px; font-weight: bold;}
   'GRAD' 0,
   'opsz' 24
 }
-
-
-.section-1{background-color: #fff6fa; margin-bottom: 65px;}
+/* Webpage design */
+.section-1{background-color: #fff6fa; padding-bottom: 65px;}
 .container{
     margin: 0 auto;
     width: 1400px;
@@ -36,16 +59,33 @@ h1,h2,h3,h4,h5,h6{margin: 0px; padding: 0px; font-weight: bold;}
 .content{
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 50px;
     margin-bottom: 60px;
+    position: relative;
+}
+.content .arrow{
+    position: absolute;
+    top: 50%;
+    color: #ee7da6;
+    border: solid;
+    padding: 5px;
+}
+.content .left{
+    right: 100%;
+    margin-right: 15px;
+}
+.content .right{
+    left: 100%;;
+    margin-left: 15px;
 }
 .content .bloc{
-    width: calc(33% - 15px);
+    width: calc(33% - 30px);
 }
 
 .content .bloc .cont-bloc{
     font-family: "Poppins", sans-serif;
     padding: 25px 0px 25px 15px;
+    background-color: #ffffff;
 }
 
 .content .bloc .cont-bloc .fir{
@@ -58,11 +98,13 @@ h1,h2,h3,h4,h5,h6{margin: 0px; padding: 0px; font-weight: bold;}
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 10px;
+    color: #644251;
 }
 .content .bloc .cont-bloc .thir{
     font-size: 12px;
     font-weight: 400;
     margin-bottom: 10px;
+    color: #795b68;
 }
 .content .bloc .cont-bloc .date{
     font-size: 11px;
@@ -80,7 +122,10 @@ h1,h2,h3,h4,h5,h6{margin: 0px; padding: 0px; font-weight: bold;}
     padding: 15px 40px;
     background-color: #ee7da6;
     color: #ffffff;
+    border: 0px;
     border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
 }
 .btn-clss :hover{
     opacity: 0.8;
