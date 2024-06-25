@@ -43,7 +43,7 @@ a:hover,a:focus{text-decoration:none;color:#000;}
 }
 /* Webpage design */
 .section-1{background-color: #fff6fa; padding: 40px 0px 65px 0px;}
-.section-1 .container{
+.container{
     margin: 0 auto;
     width: 1400px;
     padding: 0px 10px 0px 10px;
@@ -52,14 +52,13 @@ a:hover,a:focus{text-decoration:none;color:#000;}
     text-align: center;
     margin-bottom: 40px;
     font-size: 36px;
-    font-family: "Poppins", sans-serif;
     font-weight: 600;
     color: #ed74aa;
 }
 .section-1 .content{
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 20px;
     margin-bottom: 60px;
     position: relative;
 }
@@ -67,24 +66,30 @@ a:hover,a:focus{text-decoration:none;color:#000;}
     position: absolute;
     top: 50%;
     color: #ee7da6;
-    border: solid;
-    padding: 5px;
+    border: 1px solid #ee7da6;
+    width: 40px;
+    height: 35px;
+    text-align: center;
+    background-color: #ffffff;
+    padding-top: 9px;
+}
+.section-1 .content .arrow .material-symbols-outlined{
+    font-size: 15px;
 }
 .section-1 .content .left{
-    right: 100%;
-    margin-right: 15px;
+    left: -55px;
 }
 .section-1 .content .right{
-    left: 100%;;
-    margin-left: 15px;
+    right: -55px;
 }
 .section-1 .content .bloc{
-    width: calc(33% - 30px);
+    width: calc(33% - 9px);
+    border-radius: 0px 0px 18px 18px;
+    overflow: hidden;
 }
 
 .section-1 .content .bloc .cont-bloc{
-    font-family: "Poppins", sans-serif;
-    padding: 25px 0px 25px 15px;
+    padding: 25px 15px 25px 15px;
     background-color: #ffffff;
 }
 
@@ -126,6 +131,7 @@ a:hover,a:focus{text-decoration:none;color:#000;}
     border-radius: 5px;
     display: inline-block;
     text-decoration: none;
+    font-size: 12px;
 }
 .section-1 .btn-clss :hover{
     opacity: 0.8;

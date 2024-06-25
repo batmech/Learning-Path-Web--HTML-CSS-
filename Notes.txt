@@ -155,5 +155,12 @@ margin-bottom
 
 JavaScript:
 
-alert()
+alert(text) ==> Pop up message
+confirm(text) ==> To check if true/false. Returns Boolean.
+prompt(text) ==> Entered value comes into console
+
+string (num) and int added --> string (in JS)
+string (num) and int sub --> int 
+
+// multiply string (num) by 1 to convert to int
 
