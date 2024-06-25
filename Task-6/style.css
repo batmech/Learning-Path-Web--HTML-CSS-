@@ -42,65 +42,65 @@ a:hover,a:focus{text-decoration:none;color:#000;}
   'opsz' 24
 }
 /* Webpage design */
-.section-1{background-color: #fff6fa; padding-bottom: 65px;}
-.container{
+.section-1{background-color: #fff6fa; padding: 40px 0px 65px 0px;}
+.section-1 .container{
     margin: 0 auto;
     width: 1400px;
     padding: 0px 10px 0px 10px;
 }
-.heading{
+.section-1 .heading{
     text-align: center;
-    padding: 40px 0px 40px 0px;
+    margin-bottom: 40px;
     font-size: 36px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     color: #ed74aa;
 }
-.content{
+.section-1 .content{
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
     margin-bottom: 60px;
     position: relative;
 }
-.content .arrow{
+.section-1 .content .arrow{
     position: absolute;
     top: 50%;
     color: #ee7da6;
     border: solid;
     padding: 5px;
 }
-.content .left{
+.section-1 .content .left{
     right: 100%;
     margin-right: 15px;
 }
-.content .right{
+.section-1 .content .right{
     left: 100%;;
     margin-left: 15px;
 }
-.content .bloc{
+.section-1 .content .bloc{
     width: calc(33% - 30px);
 }
 
-.content .bloc .cont-bloc{
+.section-1 .content .bloc .cont-bloc{
     font-family: "Poppins", sans-serif;
     padding: 25px 0px 25px 15px;
     background-color: #ffffff;
 }
 
-.content .bloc .cont-bloc .fir{
+.section-1 .content .bloc .cont-bloc .fir{
     font-size: 12px;
     font-weight: 400;
     color: #ed74aa;
     margin-bottom: 15px;
 }
-.content .bloc .cont-bloc .sec{
+.section-1 .content .bloc .cont-bloc .sec{
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 10px;
     color: #644251;
 }
-.content .bloc .cont-bloc .thir{
+.section-1 .content .bloc .cont-bloc .thir{
     font-size: 12px;
     font-weight: 400;
     margin-bottom: 10px;
@@ -112,13 +112,13 @@ a:hover,a:focus{text-decoration:none;color:#000;}
     color: #ed74aa;
     display: flex;
 }
-.content .bloc .cont-bloc .date p{
+.section-1 .content .bloc .cont-bloc .date p{
     padding: 4px 0px 0px 6px;
 }
-.btn-clss{
+.section-1 .btn-clss{
     text-align: center;
 }
-.btn-clss .btn{
+.section-1 .btn-clss .btn{
     padding: 15px 40px;
     background-color: #ee7da6;
     color: #ffffff;
@@ -127,7 +127,7 @@ a:hover,a:focus{text-decoration:none;color:#000;}
     display: inline-block;
     text-decoration: none;
 }
-.btn-clss :hover{
+.section-1 .btn-clss :hover{
     opacity: 0.8;
     transition: 1s;
 }
